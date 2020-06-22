@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer class="footer">
-            <div class="content has-text-centered">
+        <footer className="footer">
+            <div className="content has-text-centered">
                 <p>
                     <strong>Search Movies</strong> by <a href="https://twitter.com/Matin_Echavez">Martin Echavez</a>. The source code is licensed
                     <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content

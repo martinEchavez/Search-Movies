@@ -11,7 +11,8 @@ export const SearchForm = ({onResults}) => {
 
     const _handleSubmit = async (e) => {
         e.preventDefault()
-        const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${inputMovie}`)
+        const movie = inputMovie.inputMovie
+        const response = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${movie}`)
         const data = await response.json()
         const { Search = []} = data
         onResults(Search)
