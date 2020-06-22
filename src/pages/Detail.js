@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ButtonBackToHome from '../components/ButtonBackToHome'
 
-const API_KEY = '34b3701a'
+const API_KEY = ''
 
 export const Detail = ({ match }) => {
     const [movie, setMovie] = useState([]);
