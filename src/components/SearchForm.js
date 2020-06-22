@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-const API_KEY = '34b3701a'
+const API_KEY = ''
 
 export const SearchForm = ({onResults}) => {
 
