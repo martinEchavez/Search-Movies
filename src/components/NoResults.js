@@ -4,7 +4,7 @@ const NoResults = () => {
     return (
         <div className="card">
             <div className="content">
-                Sorry not results
+                Sorry not results!
             </div>
         </div>
     )
