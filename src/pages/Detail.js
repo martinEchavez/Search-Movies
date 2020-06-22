@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import ButtonBackToHome from '../components/ButtonBackToHome'
+
 const API_KEY = '34b3701a'
 
 export const Detail = ({ match }) => {
@@ -16,14 +17,10 @@ export const Detail = ({ match }) => {
         setMovie(data)
     }
 
-    const _goBack = () => {
-        window.history.back();
-    }
-
     const { Title, Poster, Actors, Metascore, Plot } = movie
     return (
         <div>
-            <Link type='button' to={'/'}>return</Link>
+            <ButtonBackToHome/>
             <h1>{Title}</h1>
             <img alt="poster" src={Poster} />
             <h2>{Actors}</h2>

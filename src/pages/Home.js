@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import { MovieList } from '../components/MovieList'
 import { Title } from '../components/Title'
 import { SearchForm } from '../components/SearchForm'
+import NoResults from '../components/NoResults'
+import Footer from '../components/Footer'
 
 export const Home = () => {
     const [results, setResults] = useState([])
@@ -14,7 +16,7 @@ export const Home = () => {
 
     const _renderResults = () => {
         return results.length === 0
-            ? <p>Sorry! results not fount</p>
+            ? <NoResults/>
             : <MovieList movies={results} />
     }
     return (
@@ -28,6 +30,7 @@ export const Home = () => {
                     ? _renderResults()
                     : <small>Use the form tho search a movie</small>
             }
+            <Footer/>
         </div>
     )
 }
